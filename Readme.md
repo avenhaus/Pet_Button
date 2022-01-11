@@ -57,10 +57,11 @@ If there is a noticeable delay between pressing the button and the audio playing
 .platformio\packages\tool-esptoolpy\esptool.py --chip esp32 --port "COM5" --baud 460800 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader.bin
 ```
 
-A few of the ESP32 pins can not be switched to output. This means not all buttons can have be illuminated.
+A few of the ESP32 pins can not be switched to output. This means not all buttons can be illuminated.
 
 ## Todo
 
+* Code cleanup, license and documentation
 * Easier audio management through ESP32 website
 * OTA update
 * PCB
